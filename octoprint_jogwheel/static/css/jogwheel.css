@@ -1,0 +1,42 @@
+#jogwheel-control-jog-xy {
+    padding-top: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+#wheel1, #wheel2, #wheel3 {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+#wheel1 > svg, #wheel2 > svg, #wheel3 > svg {
+    width: 100%;
+    height: 100%;
+}
+
+#jogwheel-control-jog-z {
+    padding-top: 10px;
+    height: 200px;
+    width: 30px;
+}
+
+#jog_z {
+    height: 200px;
+    width: 30px;
+    margin: auto;
+}
+
+#jog_z > svg {
+    width: 100%;
+    height: 100%;
+}
+
+#control div.distance {
+    height: 233px;
+}
+
+#settings_plugin_jogwheel input.input-color {
+    height: 30px;
+    width: 50px;
+}

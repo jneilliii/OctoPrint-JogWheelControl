@@ -1,0 +1,27 @@
+<h4>Jog Wheel Control <small>{{ _('Version') }} {{ plugin_jogwheel_plugin_version }}</small></h4>
+<div class="row-fluid">
+    <div class="alert alert-info">Refresh the page after saving for the changes to take effect.</div>
+</div>
+<form id="settings_plugin_jogwheel_form" class="form-vertical">
+    <div class="controls">
+        <label class="control-label">{{ _('Button Color') }}</label>
+        <div class="input-append">
+            <input type="text" class="input input-small" data-bind="value: settingsViewModel.settings.plugins.jogwheel.primary_color" />
+            <input type="color" class="input-color add-on" data-bind="value: settingsViewModel.settings.plugins.jogwheel.primary_color" />
+        </div>
+    </div>
+    <div class="controls">
+        <label class="control-label">{{ _('Stroke Color') }}</label>
+        <div class="input-append">
+            <input type="text" class="input input-small" data-bind="value: settingsViewModel.settings.plugins.jogwheel.stroke_color" />
+            <input type="color" class="input-color add-on" data-bind="value: settingsViewModel.settings.plugins.jogwheel.stroke_color" />
+        </div>
+    </div>
+    <div class="controls">
+        <label class="control-label">{{ _('Text Color') }}</label>
+        <div class="input-append">
+            <input type="text" class="input input-small" data-bind="value: settingsViewModel.settings.plugins.jogwheel.text_color" />
+            <input type="color" class="input-color add-on" data-bind="value: settingsViewModel.settings.plugins.jogwheel.text_color" />
+        </div>
+    </div>
+</form>
