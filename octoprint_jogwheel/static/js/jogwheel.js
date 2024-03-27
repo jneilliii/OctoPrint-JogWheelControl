@@ -65,6 +65,11 @@ $(function () {
                         default:
                             console.log('direction not determined');
                     }
+
+                    if (self.printerProfilesViewModel.currentProfileData().axes.z.inverted()) {
+                        distance = distance * -1;
+                    }
+
                     speed = self.printerProfilesViewModel.currentProfileData().axes.z.speed();
                     break;
                 default:
@@ -75,20 +80,32 @@ $(function () {
                 switch (nav_wheel.currentClick) {
                     case 0:
                         direction = 'X';
+                        if (self.printerProfilesViewModel.currentProfileData().axes.x.inverted()) {
+                            distance = distance * -1;
+                        }
                         speed = self.printerProfilesViewModel.currentProfileData().axes.x.speed();
                         break;
                     case 1:
                         direction = 'Y';
                         distance = distance * -1;
+                        if (self.printerProfilesViewModel.currentProfileData().axes.y.inverted()) {
+                            distance = distance * -1;
+                        }
                         speed = self.printerProfilesViewModel.currentProfileData().axes.y.speed();
                         break;
                     case 2:
                         direction = 'X';
                         distance = distance * -1;
+                        if (self.printerProfilesViewModel.currentProfileData().axes.x.inverted()) {
+                            distance = distance * -1;
+                        }
                         speed = self.printerProfilesViewModel.currentProfileData().axes.x.speed();
                         break;
                     case 3:
                         direction = 'Y';
+                        if (self.printerProfilesViewModel.currentProfileData().axes.y.inverted()) {
+                            distance = distance * -1;
+                        }
                         speed = self.printerProfilesViewModel.currentProfileData().axes.y.speed();
                         break;
                     default:
