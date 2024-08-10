@@ -1,12 +1,8 @@
 # Jog Wheel Control
 
-This plugin replaces the built in navigation controls on the Control tab of OctoPrint with a wheel based interface.
+This plugin replaces the built in navigation controls on the Control tab of OctoPrint with a wheel based interface inspired by [smoothieware-webui](https://github.com/imrahil/smoothieware-webui).
 
 ![Screenshot Jog Wheel Control](screenshot_tab.png)
-
-## Settings
-
-![Screenshot Jog Wheel Control Settings](screenshot_settings.png)
 
 ## Get Help
 

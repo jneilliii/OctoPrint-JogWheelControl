@@ -11,17 +11,13 @@ class JogwheelPlugin(octoprint.plugin.SettingsPlugin,
     ##~~ SettingsPlugin mixin
 
     def get_settings_defaults(self):
-        return {
-            "primary_color": "#AFAFAF",
-            "stroke_color": "#FFFFFF",
-            "text_color": "#000000"
-        }
+        return {}
 
     ##~~ AssetPlugin mixin
 
     def get_assets(self):
         return {
-            "js": ["js/wheelnav.js-1.7.1/raphael.min.js", "js/wheelnav.js-1.7.1/raphael.icons.min.js", "js/wheelnav.js-1.7.1/wheelnav.min.js", "js/spectrum.js", "js/jogwheel.js"],
+            "js": ["js/spectrum.js", "js/jogwheel.js"],
             "css": ["css/jogwheel.css"]
         }
 
