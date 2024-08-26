@@ -27,11 +27,13 @@ $(function () {
             }
 
             let direction = data.slice(0, 1);
+            console.log("direction: " + direction);
             let distance = parseFloat(data.slice(1)) || 0;
+            console.log("distance: " + distance);
             let speed = self.printerProfilesViewModel.currentProfileData().axes[direction.toLowerCase()].speed();
-
+            console.log("speed: " + speed);
             if (self.printerProfilesViewModel.currentProfileData().axes[direction.toLowerCase()].inverted()) {
-                let distance = distance * -1;
+                distance = distance * -1;
             }
 
             if (direction !== null && distance !== null && speed !== null) {
