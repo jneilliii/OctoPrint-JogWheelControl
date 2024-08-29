@@ -81,16 +81,11 @@
                 <path class="std" d="M-35.16 -28.09 A45,45 0 0,0 -35.16,28.09 L-7.07,0 z" />
             </g>
         </g>
-
-        <g id="+Z" fill="#b0b0b0" transform="translate(270, 10)" pointer-events="none">
+        <g id="Z+100" data-bind="click: function() { jogAxesClick('Z100') }" fill="#b0b0b0" transform="translate(270, 10)">
             <path class="std" d=" M5,0 h30 a5,5 0 0,1 5,5 v27 h-40 v-27 a5,5 0 0,1 5,-5 z"/>
-            <path class="std" d="M20,2 l17,17 h-10 v11 h-14 v-11 h-10 z" fill="DarkSeaGreen"/>
-            <text x="11" y="18" font-size="12"> +Z</text>
-        </g>
-        <g id="-Z" fill="#b0b0b0" transform="translate(270, 10)" pointer-events="none">
-            <path class="std" d=" M0,208 h40 v27 a5,5 0 0,1 -5,5 h-30 a5,5 0 0,1 -5,-5 z"/>
-            <path class="std" d="M20,238 l-17,-17 h10 v-11 h14 v11 h10 z" fill="DarkSeaGreen"/>
-            <text x="13" y="230" font-size="12"> -Z</text>
+            {#<rect class="std" x="0" y="2" width="40" height="30" />#}
+            <circle class="scl" cx="20" cy="17" r="13"/>
+            <text class="scl" x="3" y="23" font-size="18">100</text>
         </g>
         <g id="Z+10" data-bind="click: function() { jogAxesClick('Z10') }" fill="#d0d0d0" transform="translate(270, 10)">
             <rect class="std" x="0" y="32" width="40" height="30" />
@@ -107,17 +102,21 @@
             <circle class="scl" cx="20" cy="100" r="9.5"/>
             <text class="scl" x="13" y="103.5" font-size="10"> 0.1</text>
         </g>
+        <g id="Z-100" data-bind="click: function() { jogAxesClick('Z-100') }" fill="#b0b0b0" transform="translate(270, 10)">
+            <path class="std" d=" M0,208 h40 v27 a5,5 0 0,1 -5,5 h-30 a5,5 0 0,1 -5,-5 z"/>
+        </g>
         <g id="Z-10" data-bind="click: function() { jogAxesClick('Z-10') }" fill="#d0d0d0" transform="translate(270, 10)">
-            <rect class="std" x="0" y="178" width="40" height="30" />
+            <rect class="std" x="0" y="179" width="40" height="30" />
         </g>
         <g id="Z-1" data-bind="click: function() { jogAxesClick('Z-1') }" fill="#e0e0e0" transform="translate(270, 10)">
-            <rect class="std" x="0" y="152" width="40" height="26" />
+            <rect class="std" x="0" y="156" width="40" height="26" />
         </g>
         <g id="Z-0.1" data-bind="click: function() { jogAxesClick('Z-0.1') }" fill="#f0f0f0" transform="translate(270, 10)">
-            <rect class="std" x="0" y="128" width="40" height="24" />
+            <rect class="std" x="0" y="133" width="40" height="24" />
         </g>
-        <g id="ZSpace" fill="#000000" transform="translate(270, 10)" pointer-events="none">
-            <rect class="std" x="0" y="112" width="40" height="16"/>
+        <g id="ZSpace" fill="DarkSeaGreen" transform="translate(270, 10)" pointer-events="none">
+            <rect class="std" x="0" y="112" width="40" height="22"/>
+            <text class="home" x="15" y="128">Z</text>
         </g>
 
         <defs>
