@@ -12,3 +12,12 @@
     width: 320px;
 }
 
+symbol#JogRose text.scl {
+    fill: white !important;
+    stroke: white !important;
+}
+
+symbol#JogRose circle.scl {
+    stroke: red !important;
+    stroke-width: 3 !important;
+}
